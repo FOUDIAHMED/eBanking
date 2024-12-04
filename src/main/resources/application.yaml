@@ -1,1 +1,17 @@
-spring.application.name=eBanking
+spring:
+  application:
+    name: eBanking
+  datasource:
+    url: jdbc:mysql://localhost:3306/ebanking
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQLDialect
+    defer-datasource-initialization: false
+
+
